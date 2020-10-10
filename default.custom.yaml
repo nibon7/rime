@@ -1,6 +1,4 @@
 patch:
   schema_list:
-    - schema: qqwb
-    - schema: wbpy
-
-  menu/page_size: 8
+    - schema: double_pinyin_flypy
+  switcher/caption: "方案选择"
