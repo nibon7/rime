@@ -1,4 +1,5 @@
 patch:
   schema_list:
-    - schema: double_pinyin_flypy
-  switcher/caption: "方案选择"
+    - schema: double_pinyin_flypy #使用小鹤双拼方案
+  key_binder/bindings/+:
+    - {accept: "Control+space", toggle: ascii_mode, when: always} #使用ctrl+space进行中英文切换
