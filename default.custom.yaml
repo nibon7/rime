@@ -3,3 +3,4 @@ patch:
     - schema: double_pinyin_flypy #使用小鹤双拼方案
   key_binder/bindings/+:
     - {accept: "Control+space", toggle: ascii_mode, when: always} #使用ctrl+space进行中英文切换
+  ascii_composer/switch_key/Shift_L: noop #禁用左shift切换中英文
