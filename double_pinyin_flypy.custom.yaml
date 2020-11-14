@@ -6,3 +6,5 @@ patch:
   switches/@2/reset: 1
   switches/@2/name: zh_simp
   simplifier/option_name: zh_simp
+
+  translator/dictionary: sogou_pinyin
