@@ -1,2 +1,3 @@
 patch:
-  style/horizontal: true #横向显示候选词
+  # 横向显示候选词
+  style/horizontal: true
