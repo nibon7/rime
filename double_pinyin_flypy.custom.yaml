@@ -9,3 +9,6 @@ patch:
 
   # 搜狗拼音
   translator/dictionary: sogou_pinyin
+
+  # 显示双拼代码
+  translator/preedit_format: {}
