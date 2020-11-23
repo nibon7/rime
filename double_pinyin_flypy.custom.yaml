@@ -3,8 +3,8 @@ patch:
   switches/@0/reset: 1
 
   # 默认输出简体中文
-  switches/@2/reset: 1
   switches/@2/name: zh_simp
+  switches/@2/reset: 1
   simplifier/option_name: zh_simp
 
   # 搜狗拼音
@@ -12,3 +12,15 @@ patch:
 
   # 显示双拼代码
   translator/preedit_format: {}
+
+  # emoji设置
+  switches/+:
+    - {name: emoji_suggestion, reset: 1, states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]}
+
+  engine/filters/+:
+    - simplifier@emoji_suggestion
+
+  emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: all
