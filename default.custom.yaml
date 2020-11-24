@@ -9,3 +9,6 @@ patch:
 
   # 禁用左shift切换中英文
   ascii_composer/switch_key/Shift_L: noop
+
+  # 候选词个数
+  menu/page_size: 8
