@@ -8,7 +8,7 @@ patch:
   simplifier/option_name: zh_simp
 
   # 搜狗拼音
-  translator/dictionary: sogou_pinyin
+  translator/dictionary: clover
 
   # 显示双拼代码
   translator/preedit_format: {}
