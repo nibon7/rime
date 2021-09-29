@@ -1,13 +1,5 @@
 patch:
-  # 初始状态为英文
-  switches/@0/reset: 1
-
-  # 默认输出简体中文
-  switches/@2/name: zh_simp
-  switches/@2/reset: 1
-  simplifier/option_name: zh_simp
-
-  # 搜狗拼音
+  # cloverpinyin
   translator/dictionary: clover
 
   # 显示双拼代码
