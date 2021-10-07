@@ -1,0 +1,16 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install librime
+      run: |
+        sudo apt-get install -y --no-install-recommends --no-install-suggests \
+        librime-bin librime-data-double-pinyin librime-data-stroke librime-data-emoji
+      shell: bash
+    - name: Deploy
+      run: rime_deployer --build . /usr/share/rime-data
