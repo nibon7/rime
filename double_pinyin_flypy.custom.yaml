@@ -10,9 +10,6 @@ patch:
   # cloverpinyin
   translator/dictionary: clover
 
-  # 显示双拼代码
-  translator/preedit_format: {}
-
   # emoji设置
   switches/+:
     - {name: emoji_suggestion, reset: 1, states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]}
