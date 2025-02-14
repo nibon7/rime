@@ -1,15 +1,15 @@
 patch:
-  # 使用小鹤双拼方案
-  schema_list:
-    - schema: double_pinyin_flypy
+  # 导入雾凇拼音配置
+  __include: rime_ice_suggestion:/
 
-  # 候选词个数
-  menu/page_size: 8
+  __patch:
+    # 候选词个数
+    menu/page_size: 8
 
-  # 使用ctrl+space进行中英文切换
-  key_binder/bindings/+:
-    - {accept: "Control+space", toggle: ascii_mode, when: always}
+    # 使用ctrl+space进行中英文切换
+    key_binder/bindings/+:
+      - { accept: "Control+space", toggle: ascii_mode, when: always }
 
-  # 禁用左右shift切换中英文
-  ascii_composer/switch_key/Shift_L: noop
-  ascii_composer/switch_key/Shift_R: noop
+    # 禁用左右shift切换中英文
+    ascii_composer/switch_key/Shift_L: noop
+    ascii_composer/switch_key/Shift_R: noop
