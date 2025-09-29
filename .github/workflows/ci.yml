@@ -10,7 +10,10 @@ jobs:
     - name: Install librime
       run: |
         sudo apt-get install -y --no-install-recommends --no-install-suggests \
-        librime-bin librime-data-double-pinyin librime-data-stroke librime-data-emoji
+        librime-bin librime-data unzip
       shell: bash
     - name: Deploy
-      run: rime_deployer --build . /usr/share/rime-data
+      run: |
+        sh -x deploy.sh
+        ls -l build
+      shell: bash
