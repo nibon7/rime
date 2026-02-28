@@ -2,8 +2,8 @@
 
 set -e
 
-curl -s -L -o /tmp/full.zip https://github.com/iDvel/rime-ice/releases/download/nightly/full.zip
-unzip -q /tmp/full.zip
-mv default.yaml rime_ice_suggestion.yaml
-sed -i '/^  - schema:/{/double_pinyin_flypy/!s/^/#/g}' rime_ice_suggestion.yaml
+curl -s -L -o /tmp/rime-wanxiang-base.zip https://github.com/amzxyz/rime_wanxiang/releases/download/v14.8.6/rime-wanxiang-base.zip
+curl -s -L -O https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
+unzip -q /tmp/rime-wanxiang-base.zip -x README.md
+mv default.yaml wanxiang_suggestion.yaml
 rime_deployer --build . /usr/share/rime-data

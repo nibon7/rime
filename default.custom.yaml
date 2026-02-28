@@ -1,6 +1,6 @@
 patch:
-  # 导入雾凇拼音配置
-  __include: rime_ice_suggestion:/
+  # 导入万象拼音配置
+  __include: wanxiang_suggestion:/
 
   __patch:
     # 候选词个数
