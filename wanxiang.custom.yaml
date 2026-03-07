@@ -1,0 +1,9 @@
+patch:
+  # 初始状态为英文
+  switches/@0/reset: 1
+
+  # 默认显示emoji表情
+  switches/@3/reset: 1
+
+  # 默认显示带声调的注释
+  switches/@8/reset: 1
