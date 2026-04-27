@@ -6,7 +6,7 @@ patch:
   switches/@3/reset: 1
 
   # 默认显示带声调的注释
-  switches/@8/reset: 1
+  switches/@9/reset: 1
 
   key_binder/bindings/+:
     # 中英文切换
