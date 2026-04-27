@@ -7,3 +7,11 @@ patch:
 
   # 默认显示带声调的注释
   switches/@8/reset: 1
+
+  key_binder/bindings/+:
+    # 中英文切换
+    - { accept: "Control+space", toggle: ascii_mode, when: always }
+    # 半角、全角切换
+    - { accept: "Control+comma", toggle: full_shape, when: always }
+    # 中英文符号切换
+    - { accept: "Control+period", toggle: ascii_punct, when: always }
